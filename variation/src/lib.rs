@@ -54,7 +54,7 @@
 //! to attempt to convert a enum into its inner values. This method will panic when
 //! called on a variant that does not match the method.
 //!
-//! ```rust
+//! ```ignore
 //! use variation::Variation;
 //!
 //! #[derive(Variation)]
