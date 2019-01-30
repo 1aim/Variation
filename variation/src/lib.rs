@@ -216,7 +216,7 @@ fn impl_variation(ast: &syn::DeriveInput) -> proc_macro::TokenStream {
                 pub fn #into_fn(self) -> #return_by_value {
                     match self {
                         #name::#variant_name#value_fields => #return_value,
-                        _ => panic!("")
+                        _ => panic!("`into_*` called on the wrong variant."),
                     }
                 }
             })
